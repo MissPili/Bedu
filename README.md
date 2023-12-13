@@ -139,17 +139,17 @@ Se encontraron ciertas configuraciones del perceptrón multicapa que dan a lugar
 
 Podemos obtener las siguientes conclusiones:
 
-- **Importancia de la Limpieza de Datos:** La identificación y corrección de valores cero en variables como la 'Insulina' y 'Grosor de la Piel' destacan la importancia crítica de la limpieza de datos en el análisis.
+- **Importancia de la limpieza de datos:** La identificación y corrección de valores cero en variables como la 'Insulina' y 'Grosor de la Piel' destacan la importancia crítica de la limpieza de datos en el análisis.
 
 - **Relevancia de la Glucosa:** El análisis reveló que la glucosa es el factor más influyente en la predicción de la diabetes, lo que concuerda con el conocimiento médico actual sobre la diabetes. 
 También hay relevancia del índice de masa corporal con un coeficiente positivo, indicando que los niveles más altos de BMI están asociados con la diabetes.
 La edad tiene un impacto positivo en la probabilidad de tener diabetes, lo cual tiene sentido ya que el riesgo de diabetes aumenta con la edad.
 Un número mayor de embarazos está asociado con un aumento en la probabilidad de diabetes, lo cual podría estar relacionado con la diabetes gestacional y su impacto en la salud a largo plazo.
 
-- **Manejo de Datos Desbalanceados:** La evaluación de modelos en un contexto de desbalance potencial de clases (más pacientes sin diabetes que con diabetes) resalta la necesidad de técnicas específicas para manejar este desafío.
+- **Manejo de datos desbalanceados:** La evaluación de modelos en un contexto de desbalance potencial de clases (más pacientes sin diabetes que con diabetes) resalta la necesidad de técnicas específicas para manejar este desafío.
 
 <center><img src="imagenes/Desbalance.png" width="25%" height="25%"></center>
 
-- **Importancia de la Interpretación Clínica:** La necesidad de interpretar los resultados del modelo en el contexto clínico subraya que un buen modelo no solo es estadísticamente válido, sino también clínicamente relevante.
+- **Importancia de la interpretación clínica:** La necesidad de interpretar los resultados del modelo en el contexto clínico subraya que un buen modelo no solo es estadísticamente válido, sino también clínicamente relevante.
 
-- **Necesidad de Validación y Pruebas Adicionales:** Los resultados indican la necesidad de validación externa y pruebas adicionales, particularmente en nuevos conjuntos de datos, para confirmar la generalización y robustez de los modelos de predicción.
+- **Necesidad de validación y pruebas adicionales:** Los resultados indican la necesidad de validación externa y pruebas adicionales, particularmente en nuevos conjuntos de datos, para confirmar la generalización y robustez de los modelos de predicción.
