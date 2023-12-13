@@ -33,7 +33,17 @@ El Dataset se conforma de las siguientes **variables de diagnóstico:**
 ---
 
 ### ⬆️ Carga y preprocesamiento de datos
+Se realizó la carga del archivo csv directamente a un [Notebook](https://colab.research.google.com/drive/1LPCDLF8ArAEODidUyWUracOF789XPkOf?usp=sharing) en Google Colab, así como los paquetes necesarios. 
 
+Observamos los primeros registros del conjunto de datos.
+
+<center><img src="imagenes/Ceros.png" width="75%" height="75%"></center>
+
+**Primera observación:**
+
+Podemos ver que la columna de SkinThickness presenta algunos valores nulos, lo que indica la falta de información. Del mimso modo que observamos ceros en la columna de Insulin, lo que tampoco puede considerarse un dato válido.
+
+En general en un conjunto de datos sobre diabetes, columnas como **'Glucose', "BloodPressure', 'SkinThickness', "Insulin' y 'BMI' no deberían tener ceros como valores válidos.**
 
 ---
 
