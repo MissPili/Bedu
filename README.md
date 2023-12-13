@@ -97,6 +97,10 @@ La columna SkinThickness tiene 0.00 % de ceros.
 La columna Insulin tiene 0.00 % de ceros.
 La columna BMI tiene 0.00 % de ceros.
 ```
+Los descriptivos estadísticos generales son:
+
+<center><img src="imagenes/descriptivos.png" width="75%" height="75%"></center>
+
 Para el análisis visual recurrimos a las siguientes gráficas:
 <center><img src="imagenes/Gráficas de caja.png" width="75%" height="75%"></center>
 <center><img src="imagenes/Gráficas de cajapositivos.png" width="75%" height="75%"></center>
@@ -105,6 +109,8 @@ Para el análisis visual recurrimos a las siguientes gráficas:
 **Información que se puede observar en las boxplot y la tabla** con los promedios para los diagnosticos positivos y negativos:
 
 Los valores más altos de embarazos, glucosa, presión de sangre, ancho de la piel, insulina, función de diabetes y la edad parecen estar relacionados a un diagnóstico positivo de diabetes.
+
+<center><img src="imagenes/Heatmap.png" width="75%" height="75%"></center>
 
 ---
 
@@ -117,6 +123,14 @@ Los valores más altos de embarazos, glucosa, presión de sangre, ancho de la pi
 Esto nos muestra que el modelo más prometedor es el Light Gradient Boost Machine Classifier que usa algoritmos de árboles de decisión.
 Sin embargo, se decidió explorar algunos de los modelos que hemos trabajado en el curso ya que son con los cuales estamos más familiarizados.
 
+Obtuvimos los siguientes resultados:
+```
+ROC AUC Score en Regresión logística: 0.8574574987955125
+ROC AUC Score en Árboles de decisión: 0.8364305871016589
+Perceptrón Multicapa. Precisión: 85%
+```
+Se encontraron ciertas configuraciones del perceptrón multicapa que dan a lugar a buenos porcentajes de clasificación. Sin embargo, en lo general se encontró que oscilan entre el 78% y el 85% de precisión, lo cual no es muy alto comparado con otros modelos.
+
 ---
 
 ### 3️⃣ Conclusiones
@@ -125,9 +139,14 @@ Podemos obtener las siguientes conclusiones:
 
 - **Importancia de la Limpieza de Datos:** La identificación y corrección de valores cero en variables como la 'Insulina' y 'Grosor de la Piel' destacan la importancia crítica de la limpieza de datos en el análisis.
 
-- **Relevancia de la Glucosa:** El análisis reveló que la glucosa es el factor más influyente en la predicción de la diabetes, lo que concuerda con el conocimiento médico actual sobre la diabetes.
+- **Relevancia de la Glucosa:** El análisis reveló que la glucosa es el factor más influyente en la predicción de la diabetes, lo que concuerda con el conocimiento médico actual sobre la diabetes. 
+También hay relevancia del índice de masa corporal con un coeficiente positivo, indicando que los niveles más altos de BMI están asociados con la diabetes.
+La edad tiene un impacto positivo en la probabilidad de tener diabetes, lo cual tiene sentido ya que el riesgo de diabetes aumenta con la edad.
+Un número mayor de embarazos está asociado con un aumento en la probabilidad de diabetes, lo cual podría estar relacionado con la diabetes gestacional y su impacto en la salud a largo plazo.
 
 - **Manejo de Datos Desbalanceados:** La evaluación de modelos en un contexto de desbalance potencial de clases (más pacientes sin diabetes que con diabetes) resalta la necesidad de técnicas específicas para manejar este desafío.
+
+<center><img src="imagenes/Desbalance.png" width="25%" height="25%"></center>
 
 - **Importancia de la Interpretación Clínica:** La necesidad de interpretar los resultados del modelo en el contexto clínico subraya que un buen modelo no solo es estadísticamente válido, sino también clínicamente relevante.
 
