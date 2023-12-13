@@ -139,6 +139,17 @@ Se encontraron ciertas configuraciones del perceptrón multicapa que dan a lugar
 
 Podemos obtener las siguientes conclusiones:
 
+- **Importancia de la limpieza de datos** 
+- **Relevancia de la Glucosa** 
+- **Manejo de datos desbalanceados** 
+- **Importancia de la interpretación clínica** 
+- **Necesidad de validación y pruebas adicionales**
+
+
+
+
+
+
 - **Importancia de la limpieza de datos:** La identificación y corrección de valores cero en variables como la 'Insulina' y 'Grosor de la Piel' destacan la importancia crítica de la limpieza de datos en el análisis.
 
 - **Relevancia de la Glucosa:** El análisis reveló que la glucosa es el factor más influyente en la predicción de la diabetes, lo que concuerda con el conocimiento médico actual sobre la diabetes. 
