@@ -33,7 +33,7 @@ El Dataset se conforma de las siguientes **variables de diagnóstico:**
 ---
 
 ### ⬆️ Carga y preprocesamiento de datos
-Se realizó la carga del archivo csv directamente a un [Notebook](https://colab.research.google.com/drive/1LPCDLF8ArAEODidUyWUracOF789XPkOf?usp=sharing) en Google Colab, así como los paquetes necesarios. 
+Se realizó la carga del archivo csv directamente a un [Notebook](https://github.com/MissPili/Bedu/blob/main/Notebook/Proyecto_Diabetes_Equipo14.ipynb) en Google Colab, así como los paquetes necesarios. 
 
 Observamos los primeros registros del conjunto de datos.
 
