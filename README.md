@@ -99,10 +99,23 @@ La columna BMI tiene 0.00 % de ceros.
 ```
 Para el análisis visual recurrimos a las siguientes gráficas:
 <center><img src="imagenes/Gráficas de caja.png" width="75%" height="75%"></center>
+<center><img src="imagenes/Gráficas de cajapositivos.png" width="75%" height="75%"></center>
+<center><img src="imagenes/Gráficas de cajapnegativos.png" width="75%" height="75%"></center>
+
+**Información que se puede observar en las boxplot y la tabla** con los promedios para los diagnosticos positivos y negativos:
+
+Los valores más altos de embarazos, glucosa, presión de sangre, ancho de la piel, insulina, función de diabetes y la edad parecen estar relacionados a un diagnóstico positivo de diabetes.
+
 ---
 
 ### 2️⃣ Modelo
 
+**Problema:** El problema planteado es predecir si un paciente tiene diabetes basándose en ciertas medidas clínicas incluidas en el conjunto de datos. Este es un problema de clasificación binaria, ya que el resultado que queremos predecir es si el paciente tiene diabetes (1) o no (0).
+
+<center><img src="imagenes/Lazy.png" width="75%" height="75%"></center>
+
+Esto nos muestra que el modelo más prometedor es el Light Gradient Boost Machine Classifier que usa algoritmos de árboles de decisión.
+Sin embargo, se decidió explorar algunos de los modelos que hemos trabajado en el curso ya que son con los cuales estamos más familiarizados.
 
 ---
 
