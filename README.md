@@ -1,6 +1,6 @@
 # Bedu
 ## Módulo 5 - Proyecto de Machine Learning
-### ⚕️ Proyecto:Detección de Diabetes
+### ⚕️ Proyecto: Detección de Diabetes
 **Equipo 14**   
 - *Bruno Ivan Salgado Molina* 
 - *José David Martínez Cantera* 
@@ -97,6 +97,8 @@ La columna SkinThickness tiene 0.00 % de ceros.
 La columna Insulin tiene 0.00 % de ceros.
 La columna BMI tiene 0.00 % de ceros.
 ```
+Para el análisis visual recurrimos a las siguientes gráficas:
+<center><img src="imagenes/Gráficas de caja.png" width="75%" height="75%"></center>
 ---
 
 ### 2️⃣ Modelo
