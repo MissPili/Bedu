@@ -118,6 +118,8 @@ Los valores más altos de embarazos, glucosa, presión de sangre, ancho de la pi
 
 **Problema:** El problema planteado es predecir si un paciente tiene diabetes basándose en ciertas medidas clínicas incluidas en el conjunto de datos. Este es un problema de clasificación binaria, ya que el resultado que queremos predecir es si el paciente tiene diabetes (1) o no (0).
 
+Una herramienta muy útil para dar un primer vistazo a los modelos que son más prometedores para solventar un problema de clasificación es la herramienta LazyClassifier de la paquetería LazyPredict, la cual nos permite observar el desempeño aproximado que pueden tener diferentes modelos de clasificación.
+
 <center><img src="imagenes/Lazy.png" width="75%" height="75%"></center>
 
 Esto nos muestra que el modelo más prometedor es el Light Gradient Boost Machine Classifier que usa algoritmos de árboles de decisión.
