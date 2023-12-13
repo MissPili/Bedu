@@ -45,13 +45,58 @@ Podemos ver que la columna de SkinThickness presenta algunos valores nulos, lo q
 
 En general en un conjunto de datos sobre diabetes, columnas como **'Glucose', "BloodPressure', 'SkinThickness', "Insulin' y 'BMI' no deberían tener ceros como valores válidos.**
 
+También se buscaron valores nulos, así como la homogeneidad de los datos.
+
+```
+La columna: 'Pregnancies' no tiene valores nulos
+La columna: 'Glucose' no tiene valores nulos
+La columna: 'BloodPressure' no tiene valores nulos
+La columna: 'SkinThickness' no tiene valores nulos
+La columna: 'Insulin' no tiene valores nulos
+La columna: 'BMI' no tiene valores nulos
+La columna: 'DiabetesPedigreeFunction' no tiene valores nulos
+La columna: 'Age' no tiene valores nulos
+La columna: 'Outcome' no tiene valores nulos
+--------------------------------------------
+El conjunto de datos no tiene valores nulos.
+--------------------------------------------
+
+La columna: 'Pregnancies' tiene formato homogéneo
+La columna: 'Glucose' tiene formato homogéneo
+La columna: 'BloodPressure' tiene formato homogéneo
+La columna: 'SkinThickness' tiene formato homogéneo
+La columna: 'Insulin' tiene formato homogéneo
+La columna: 'BMI' tiene formato homogéneo
+La columna: 'DiabetesPedigreeFunction' tiene formato homogéneo
+La columna: 'Age' tiene formato homogéneo
+La columna: 'Outcome' tiene formato homogéneo
+--------------------------------------------
+El conjunto de datos tiene formato homogéneo.
+--------------------------------------------
+```
 ---
 
 ### 1️⃣ Análisis Exploratorio de Datos
 
-Se realizó el análisis mediante medidas de tendencia central para algunos de los campos y medidas de variabilidad, así como un análisis visual.
+Se realizó el análisis mediante medidas de tendencia central para algunos de los campos, así como un análisis visual. Derivado de los ceros que se identificaron previamente, procedimos a determinar el porcentaje de los mismos para saber qué tanto alteraría los resultados.
+```
+La columna Glucose tiene 0.65 % de ceros.
+La columna BloodPressure tiene 4.56 % de ceros.
+La columna SkinThickness tiene 29.56 % de ceros.
+La columna Insulin tiene 48.70 % de ceros.
+La columna BMI tiene 1.43 % de ceros.
+```
+Procedimos a dar dos tipos de tratamiento:
+- Para las variables con más de un 10% de ceros sustituímos los ceros por el valor promedio en los pacientes negativos a diabetes y positivos a diabetes, respectivamente.
+- Para las variables con menos de un 10% de ceros, eliminamos las filas.
 
-
+```
+La columna Glucose tiene 0.00 % de ceros.
+La columna BloodPressure tiene 0.00 % de ceros.
+La columna SkinThickness tiene 0.00 % de ceros.
+La columna Insulin tiene 0.00 % de ceros.
+La columna BMI tiene 0.00 % de ceros.
+```
 ---
 
 ### 2️⃣ Modelo
