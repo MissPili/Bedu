@@ -11,11 +11,25 @@
 ### 📄 Introducción
 Este proyecto busca prever si un paciente tiene diabetes o no, utilizando un conjunto de datos disponible en la plataforma [Kaggle](https://www.kaggle.com/uciml/pima-indians-diabetes-database).
 
+#### Información del Dataset
+**Población:** Los datos incluyen información de mujeres Pima, mayores de 21 años.
+
+El Dataset se conforma de las siguientes **variables de diagnóstico:**
+
+* **Pregnancies**: Número de embarazos
+* **Glucose**: Glucosa en sangre
+* **BloodPressure**: Presión arterial
+* **SkinThickness**: Grosor de la piel
+* **Insulin**: Insulina
+* **BMI**: Índice de Masa Corporal
+* **DiabetesPedigreeFunction**: Función que establece un valor de riesgo de diabetes por historia clínica familiar.
+* **Age**: Edad
+
+**La variable target es Outcome** con el valor 1 para positivo a Diabetes y 0 para negativo.
 #### :dart: Objetivos y Tareas
 
 - Crear Series y DataFrames y aprovecharlas a la perfección.
 - Usar conceptos estadísticos para realizar un análisis exploratorio datasets para entender sus datos antes de realizar cualquier manipulación.
-- 
 ---
 
 ### ⬆️ Carga y preprocesamiento de datos
