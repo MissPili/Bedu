@@ -106,7 +106,7 @@ Para el análisis visual recurrimos a las siguientes gráficas:
 <center><img src="imagenes/Gráficas de cajapositivos.png" width="75%" height="75%"></center>
 <center><img src="imagenes/Gráficas de cajapnegativos.png" width="75%" height="75%"></center>
 
-**Información que se puede observar en las boxplot y la tabla** con los promedios para los diagnosticos positivos y negativos:
+**Información que se puede observar en las boxplot y** con los promedios para los diagnósticos positivos y negativos:
 
 Los valores más altos de embarazos, glucosa, presión de sangre, ancho de la piel, insulina, función de diabetes y la edad parecen estar relacionados a un diagnóstico positivo de diabetes.
 
